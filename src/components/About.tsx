@@ -1,3 +1,5 @@
+import PutraImage from "../assets/putra.jpg";
+
 const About = () => {
     return (
         <section id="about" className="min-h-screen flex items-center justify-center bg-white py-20">
@@ -8,7 +10,7 @@ const About = () => {
                     {/* Left side - Image or illustration */}
                     <div className="flex justify-center">
                         <div className="w-64 h-64 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center text-white text-6xl font-bold">
-                            <img src="./src/assets/putra.jpg" alt="Putra Harianja" className="aspect-square object-cover rounded-full" />
+                            <img src={PutraImage} alt="Putra Harianja" className="aspect-square object-cover rounded-full" />
                         </div>
                     </div>
 
