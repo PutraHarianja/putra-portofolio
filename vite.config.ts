@@ -11,4 +11,5 @@ export default defineConfig({
     tailwindcss(),
     tsconfigPaths(),
   ],
+  base: '/putra-portofolio/'
 })
