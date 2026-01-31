@@ -5,6 +5,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [heroBottomPosition, setHeroBottomPosition] = useState(250);
+    const [isMouseOnTop, setIsMouseOnTop] = useState(false);
 
     // Calculate hero bottom position only once on mount
     useEffect(() => {
@@ -13,6 +14,17 @@ const Navbar = () => {
             const rect = element.getBoundingClientRect();
             setHeroBottomPosition(rect.bottom + window.scrollY);
         }
+
+        const handleMouseMove = (e: MouseEvent) => {
+            setIsMouseOnTop(e.clientY < 100);
+            console.log(e.clientY);
+        }
+        window.addEventListener('mousemove', handleMouseMove);
+
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+        }
+
     }, []);
 
     // Handle scroll event
@@ -21,11 +33,19 @@ const Navbar = () => {
             setScrolled(window.scrollY > heroBottomPosition);
         };
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
     }, [heroBottomPosition]);
 
+    const showNavbar = isMouseOnTop || scrolled
+
     return (
-        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 bg-white ${scrolled ? 'visible' : 'invisible'}`}>
+        <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${showNavbar
+            ? 'bg-white/80 backdrop-blur-md shadow-md translate-y-0 opacity-100'
+            : 'bg-white/80 backdrop-blur-md shadow-md -translate-y-full opacity-0'
+            }`}>
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo/Name */}

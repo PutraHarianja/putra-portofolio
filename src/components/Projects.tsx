@@ -6,29 +6,22 @@ const Projects = () => {
             title: "AI Shopping Assistant UI",
             description: "Interactive UI for AI shopping assistant built with Vue.js, providing seamless user experience for AI-powered shopping recommendations.",
             tech: ["Vue.js", "JavaScript", "AI Integration"],
-            link: "#", // Replace with actual link
-            github: "#" // Optional
+            link: "https://github.com/PutraHarianja/pyng-ui", // Replace with actual link
+            github: "https://github.com/PutraHarianja/pyng-ui" // Optional
         },
         {
             title: "AI Short Story Generator",
             description: "A creative short story generator for children powered by Gemini AI. Built with Vue.js frontend and Node.js backend.",
             tech: ["Vue.js", "Node.js", "Gemini AI"],
-            link: "#", // Replace with actual link
-            github: "#"
-        },
-        {
-            title: "YouthPedia: Asean Youth Forum Blog",
-            description: "Full-stack blogging system for Asean Youth Organization featuring comprehensive content management and user engagement features.",
-            tech: ["React.js", "Node.js", "Full-stack"],
-            link: "#", // Replace with actual link
-            github: "#"
+            link: "https://github.com/PutraHarianja/child-story-generator", // Replace with actual link
+            github: "https://github.com/PutraHarianja/child-story-generator"
         },
         {
             title: "TokoPintar",
             description: "Online bookstore platform developed during Tech4Impact Bootcamp. E-commerce solution with modern UI and seamless shopping experience.",
             tech: ["React.js", "E-commerce", "Bootcamp Project"],
-            link: "#", // Replace with actual link
-            github: "#"
+            link: "https://github.com/PutraHarianja/Skilvul-Kelompok11-TokoPinter", // Replace with actual link
+            github: "https://github.com/PutraHarianja/Skilvul-Kelompok11-TokoPinter"
         }
     ];
 
@@ -44,7 +37,7 @@ const Projects = () => {
                     {projects.map((project, index) => (
                         <div
                             key={index}
-                            className="bg-gray-50 rounded-lg p-6 hover:shadow-xl transition-shadow border border-gray-200"
+                            className="bg-white rounded-lg p-6 hover:shadow-xl transition-shadow border border-gray-200"
                         >
                             <h3 className="text-2xl font-semibold mb-3 text-gray-900">
                                 {project.title}
