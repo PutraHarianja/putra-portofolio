@@ -4,18 +4,28 @@ import { useState, useEffect } from 'react';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [heroBottomPosition, setHeroBottomPosition] = useState(250);
 
+    // Calculate hero bottom position only once on mount
+    useEffect(() => {
+        const element = document.getElementById('hero');
+        if (element) {
+            const rect = element.getBoundingClientRect();
+            setHeroBottomPosition(rect.bottom + window.scrollY);
+        }
+    }, []);
+
+    // Handle scroll event
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
+            setScrolled(window.scrollY > heroBottomPosition);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [heroBottomPosition]);
 
     return (
-        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-blue-50/95' : 'bg-transparent'
-            }`}>
+        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 bg-white ${scrolled ? 'visible' : 'invisible'}`}>
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo/Name */}
