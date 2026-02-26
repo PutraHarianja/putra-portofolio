@@ -1,9 +1,26 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import Particles, { initParticlesEngine } from '@tsparticles/react';
+import { loadSlim } from '@tsparticles/slim';
+import particlesjsConfig from '../assets/particlesjs-config.json';
 
 const Hero = () => {
+    const [isReady, setIsReady] = useState(false);
+
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+            await loadSlim(engine);
+        }).then(() => setIsReady(true));
+    }, []);
+
     return (
-        <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
-            <div className="text-center px-4">
+        <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
+            {isReady && <Particles
+                id="tsparticles"
+                className="absolute inset-0 z-0"
+                options={particlesjsConfig as any}
+            />}
+            <div className="relative z-10 text-center px-4">
                 <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
                     Putra P.G Harianja
                 </h1>
