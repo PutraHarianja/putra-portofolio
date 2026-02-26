@@ -35,7 +35,7 @@ const Projects = ({ isReady }: { isReady: boolean }) => {
                 options={particlesjsConfig as any}
             />}
             <div className="relative z-10 max-w-6xl mx-auto px-4">
-                <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Projects</h2>
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-600 text-center mb-4">Projects</h2>
                 <p className="text-center text-gray-600 mb-12 text-lg">
                     Some of my recent work and side projects
                 </p>

@@ -11,7 +11,7 @@ const Contact = ({ isReady }: { isReady: boolean }) => {
                 options={particlesjsConfig as any}
             />}
             <div className="relative z-10 max-w-4xl mx-auto px-4 w-full">
-                <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Get In Touch</h2>
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-600 text-center mb-4">Get In Touch</h2>
                 <p className="text-center text-gray-700 mb-12 text-lg">
                     I'm always open to discussing new projects, opportunities, or collaborations
                 </p>
