@@ -38,7 +38,7 @@
         "mode": "slow",
         "parallax": {
           "enable": false,
-          "force": 3000,
+          "force": 300,
           "smooth": 10
         }
       },
@@ -288,7 +288,7 @@
         "mode": "delete",
         "value": 0
       },
-      "value": 500
+      "value": 350
     },
     "opacity": {
       "value": 0.5,

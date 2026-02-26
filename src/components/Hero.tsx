@@ -57,7 +57,7 @@ const Hero = ({ isReady }: { isReady: boolean }) => {
                     </a>
                     <a
                         href="#contact"
-                        className="border-2 border-sky-600 text-sky-600 px-6 py-3 rounded-lg hover:bg-sky-600 hover:text-white transition"
+                        className="border-2 border-sky-600 text-sky-600 px-6 py-3 rounded-lg hover:bg-sky-300 hover:text-white transition"
                     >
                         Get In Touch
                     </a>
