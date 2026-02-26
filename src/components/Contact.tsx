@@ -1,9 +1,16 @@
 import { Mail, Linkedin, Github, Phone, MapPin } from 'lucide-react';
+import Particles from '@tsparticles/react';
+import particlesjsConfig from '../assets/particlesjs-config.json';
 
-const Contact = () => {
+const Contact = ({ isReady }: { isReady: boolean }) => {
     return (
-        <section id="contact" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-50 to-sky-100 py-20">
-            <div className="max-w-4xl mx-auto px-4 w-full">
+        <section id="contact" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-50 to-sky-100 py-20">
+            {isReady && <Particles
+                id="tsparticles-contact"
+                className="absolute inset-0 z-0"
+                options={particlesjsConfig as any}
+            />}
+            <div className="relative z-10 max-w-4xl mx-auto px-4 w-full">
                 <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Get In Touch</h2>
                 <p className="text-center text-gray-700 mb-12 text-lg">
                     I'm always open to discussing new projects, opportunities, or collaborations

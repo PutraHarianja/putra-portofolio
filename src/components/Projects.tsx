@@ -1,6 +1,8 @@
 import { ExternalLink, Github } from 'lucide-react';
+import Particles from '@tsparticles/react';
+import particlesjsConfig from '../assets/particlesjs-config.json';
 
-const Projects = () => {
+const Projects = ({ isReady }: { isReady: boolean }) => {
     const projects = [
         {
             title: "AI Shopping Assistant UI",
@@ -26,8 +28,13 @@ const Projects = () => {
     ];
 
     return (
-        <section id="projects" className="min-h-screen flex items-center justify-center bg-gray-50 py-20">
-            <div className="max-w-6xl mx-auto px-4">
+        <section id="projects" className="relative min-h-screen flex items-center justify-center bg-gray-50 py-20">
+            {isReady && <Particles
+                id="tsparticles-projects"
+                className="absolute inset-0 z-0"
+                options={particlesjsConfig as any}
+            />}
+            <div className="relative z-10 max-w-6xl mx-auto px-4">
                 <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Projects</h2>
                 <p className="text-center text-gray-600 mb-12 text-lg">
                     Some of my recent work and side projects
