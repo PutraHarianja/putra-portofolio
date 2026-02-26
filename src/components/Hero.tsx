@@ -14,7 +14,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
+        <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-50 to-sky-100">
             {isReady && <Particles
                 id="tsparticles"
                 className="absolute inset-0 z-0"
@@ -37,7 +37,7 @@ const Hero = () => {
                         href="https://github.com/PutraHarianja"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-blue-600 transition"
+                        className="hover:text-sky-600 transition"
                     >
                         <Github size={32} />
                     </a>
@@ -45,13 +45,13 @@ const Hero = () => {
                         href="https://linkedin.com/in/putra-harianja"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-blue-600 transition"
+                        className="hover:text-sky-600 transition"
                     >
                         <Linkedin size={32} />
                     </a>
                     <a
                         href="mailto:putra.harianja007@gmail.com"
-                        className="hover:text-blue-600 transition"
+                        className="hover:text-sky-600 transition"
                     >
                         <Mail size={32} />
                     </a>
@@ -61,13 +61,13 @@ const Hero = () => {
                 <div className="flex justify-center gap-4">
                     <a
                         href="#projects"
-                        className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+                        className="bg-sky-600 text-white px-6 py-3 rounded-lg hover:bg-sky-700 transition"
                     >
                         View Projects
                     </a>
                     <a
                         href="#contact"
-                        className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition"
+                        className="border-2 border-sky-600 text-sky-600 px-6 py-3 rounded-lg hover:bg-sky-600 hover:text-white transition"
                     >
                         Get In Touch
                     </a>

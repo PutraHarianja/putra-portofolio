@@ -51,7 +51,7 @@ const Projects = () => {
                                 {project.tech.map((tech, idx) => (
                                     <span
                                         key={idx}
-                                        className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
+                                        className="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium"
                                     >
                                         {tech}
                                     </span>
@@ -64,7 +64,7 @@ const Projects = () => {
                                     href={project.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition"
+                                    className="flex items-center gap-2 text-sky-600 hover:text-sky-800 transition"
                                 >
                                     <ExternalLink size={20} />
                                     <span>View Project</span>

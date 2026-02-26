@@ -38,7 +38,7 @@ const Skills = () => {
                             key={index}
                             className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
                         >
-                            <div className="text-blue-600 mb-4">
+                            <div className="text-sky-600 mb-4">
                                 {category.icon}
                             </div>
                             <h3 className="text-xl font-semibold mb-4 text-gray-900">
@@ -47,7 +47,7 @@ const Skills = () => {
                             <ul className="space-y-2">
                                 {category.skills.map((skill, idx) => (
                                     <li key={idx} className="text-gray-700 flex items-center">
-                                        <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                                        <span className="w-2 h-2 bg-sky-600 rounded-full mr-2"></span>
                                         {skill}
                                     </li>
                                 ))}
@@ -70,7 +70,7 @@ const Skills = () => {
                                 </div>
                                 <div className="w-full bg-gray-200 rounded-full h-2">
                                     <div
-                                        className="bg-blue-600 h-2 rounded-full transition-all duration-500"
+                                        className="bg-sky-600 h-2 rounded-full transition-all duration-500"
                                         style={{ width: `${skill.level}%` }}
                                     ></div>
                                 </div>

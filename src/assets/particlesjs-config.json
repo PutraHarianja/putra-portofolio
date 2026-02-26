@@ -179,7 +179,7 @@
       }
     },
     "color": {
-      "value": "#6366f1",
+      "value": "#0ea5e9",
       "animation": {
         "h": {
           "count": 0,
@@ -451,7 +451,7 @@
     "links": {
       "blink": false,
       "color": {
-        "value": "#818cf8"
+        "value": "#7dd3fc"
       },
       "consent": false,
       "distance": 150,

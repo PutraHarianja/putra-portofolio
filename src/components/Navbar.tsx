@@ -55,11 +55,11 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-8">
-                        <a href="#hero" className="hover:text-blue-600 transition">Home</a>
-                        <a href="#about" className="hover:text-blue-600 transition">About</a>
-                        <a href="#skills" className="hover:text-blue-600 transition">Skills</a>
-                        <a href="#projects" className="hover:text-blue-600 transition">Projects</a>
-                        <a href="#contact" className="hover:text-blue-600 transition">Contact</a>
+                        <a href="#hero" className="hover:text-sky-600 transition">Home</a>
+                        <a href="#about" className="hover:text-sky-600 transition">About</a>
+                        <a href="#skills" className="hover:text-sky-600 transition">Skills</a>
+                        <a href="#projects" className="hover:text-sky-600 transition">Projects</a>
+                        <a href="#contact" className="hover:text-sky-600 transition">Contact</a>
                     </div>
 
                     {/* Mobile menu button */}
@@ -74,11 +74,11 @@ const Navbar = () => {
                 {/* Mobile Menu */}
                 {isOpen && (
                     <div className="md:hidden pb-4 bg-white rounded-b-lg shadow-lg">
-                        <a href="#hero" className="block py-2 px-4 hover:text-blue-600 hover:bg-gray-50 transition">Home</a>
-                        <a href="#about" className="block py-2 px-4 hover:text-blue-600 hover:bg-gray-50 transition">About</a>
-                        <a href="#skills" className="block py-2 px-4 hover:text-blue-600 hover:bg-gray-50 transition">Skills</a>
-                        <a href="#projects" className="block py-2 px-4 hover:text-blue-600 hover:bg-gray-50 transition">Projects</a>
-                        <a href="#contact" className="block py-2 px-4 hover:text-blue-600 hover:bg-gray-50 transition">Contact</a>
+                        <a href="#hero" className="block py-2 px-4 hover:text-sky-600 hover:bg-gray-50 transition">Home</a>
+                        <a href="#about" className="block py-2 px-4 hover:text-sky-600 hover:bg-gray-50 transition">About</a>
+                        <a href="#skills" className="block py-2 px-4 hover:text-sky-600 hover:bg-gray-50 transition">Skills</a>
+                        <a href="#projects" className="block py-2 px-4 hover:text-sky-600 hover:bg-gray-50 transition">Projects</a>
+                        <a href="#contact" className="block py-2 px-4 hover:text-sky-600 hover:bg-gray-50 transition">Contact</a>
                     </div>
                 )}
             </div>

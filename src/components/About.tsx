@@ -9,7 +9,7 @@ const About = () => {
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Left side - Image or illustration */}
                     <div className="flex justify-center">
-                        <div className="w-64 h-64 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center text-white text-6xl font-bold">
+                        <div className="w-64 h-64 bg-gradient-to-br from-sky-400 to-sky-600 rounded-full flex items-center justify-center text-white text-6xl font-bold">
                             <img loading="eager" src={putraImg} alt="Putra Harianja" className="w-full h-full object-cover rounded-full" />
                         </div>
                     </div>
@@ -24,7 +24,7 @@ const About = () => {
                             building multiplatform UI services for the Tiket Group ecosystem.
                         </p>
                         <p className="text-gray-700 mb-4 leading-relaxed">
-                            I specialize in <span className="font-semibold text-blue-600">Vue.js</span> and <span className="font-semibold text-blue-600">React.js</span>,
+                            I specialize in <span className="font-semibold text-sky-600">Vue.js</span> and <span className="font-semibold text-sky-600">React.js</span>,
                             with hands-on experience migrating large-scale applications from Vue 2 to Vue 3,
                             leading UI-focused projects, and delivering fast-paced development solutions.
                         </p>
@@ -35,7 +35,7 @@ const About = () => {
 
                         {/* Quick stats */}
                         <div className="gap-4 mt-8">
-                            <div className="border-l-4 border-blue-600 pl-4">
+                            <div className="border-l-4 border-sky-600 pl-4">
                                 <h4 className="text-3xl font-bold text-gray-900">3+</h4>
                                 <p className="text-gray-600">Years Experience</p>
                             </div>
