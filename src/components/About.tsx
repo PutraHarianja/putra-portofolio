@@ -1,4 +1,4 @@
-import putraImg from '/public/images/putra.jpg';
+import putraImg from '/public/images/putra.webp';
 
 const About = () => {
     return (
@@ -10,7 +10,7 @@ const About = () => {
                     {/* Left side - Image or illustration */}
                     <div className="flex justify-center">
                         <div className="w-64 h-64 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center text-white text-6xl font-bold">
-                            <img src={putraImg} alt="Putra Harianja" className="w-full h-full object-cover rounded-full" />
+                            <img loading="eager" src={putraImg} alt="Putra Harianja" className="w-full h-full object-cover rounded-full" />
                         </div>
                     </div>
 
